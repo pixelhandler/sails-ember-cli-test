@@ -5,7 +5,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('employee');
+  this.resource('employee', function() {
+    this.route('new');
+    this.route('edit', {path: ':employee_id'});
+  });
   this.route('location');
 });
 

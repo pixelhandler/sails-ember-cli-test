@@ -1,4 +1,7 @@
+<div>
+  {{link-to 'New Employee' 'employee.new'}}
+</div>
 {{#each}}
-<div>{{#link-to "employee.edit"}}{{fullName}}{{/link-to}}</div>
+<div>{{#link-to "employee.edit" this}}{{fullName}}{{/link-to}}</div>
 {{/each}}
 {{outlet}}
