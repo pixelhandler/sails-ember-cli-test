@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberClient</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-client.css">
+  </head>
+  <body>
+    <script>
+      window.EmberClientENV = {{ENV}};
+      window.EmberENV = window.EmberClientENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-client.js"></script>
+    <script>
+      window.EmberClient = require('ember-client/app')['default'].create(EmberClientENV.APP);
+    </script>
+  </body>
+</html>
