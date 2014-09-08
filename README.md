@@ -4,7 +4,7 @@ a [Sails](http://sailsjs.org) application
 
 
 # Setup
-`npm install && cd ember-client && npm install`
+`npm install && cd ember-client && npm install && bower install`
 
 # Running
 Fist start sails
