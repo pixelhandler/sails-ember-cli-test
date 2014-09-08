@@ -8,11 +8,14 @@ a [Sails](http://sailsjs.org) application
 
 # Running
 Fist start sails
+
 `sails lift`
 
 Then in a different terminal start ember
+
 `cd ember-client`
-`ember server ember server --proxy http://0.0.0.0:1337`
+
+`ember server --proxy http://0.0.0.0:1337`
 
 
 Visit the application at 
