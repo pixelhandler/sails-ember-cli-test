@@ -17,7 +17,7 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('bower_components/ember-data-sails-adapter/ember-data-sails-adapter.js');
+app.import('vendor/ember-data-sails-adapter.js');
 app.import('vendor/sails.io.js');
 
 module.exports = app.toTree();
