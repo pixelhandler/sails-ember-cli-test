@@ -6,16 +6,19 @@ a [Sails](http://sailsjs.org) application
 # Setup
 `npm install && cd ember-client && npm install && bower install`
 
+If you have errors, try the above commands individually.
+
+
 # Running
 Fist start sails
 
-`sails lift`
+`./node_modules/.bin/sails lift`
 
 Then in a different terminal start ember
 
 `cd ember-client`
 
-`ember server --proxy http://0.0.0.0:1337`
+`./node_modules/.bin/ember server --proxy http://0.0.0.0:1337`
 
 
 Visit the application at 
